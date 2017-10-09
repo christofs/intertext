@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- CUSTOMIZE THIS! -->
-<title>DH und Intertextialität</title>
+<title>Spitzer and Racine, revisited</title>
 <meta name="author" content="Christof Schöch">
 <!-- END -->
 <meta name="description" content="Slides">
@@ -29,221 +29,584 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 
 <body>
 <div class="reveal">
-<div class="slides">
-<section data-markdown="" data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
-<script type="text/template">
-
 <!-- THIS IS WHERE THE CONTENT GOES! -->
 <!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
 
-## Workshop: Intertextualität aus der Perspektive der Digital Humanities
-<br/>
+<section data-markdown>
+<script type="text/template">
+# Spitzer and Racine, revisited
+## A replication study
 <hr/>
 <br/>
+<p>Christof Schöch<br/>(Würzburg/Trier)</p>
 <br/>
-<small>Christof Schöch, Würzburg</small>
-<br/>
-<small>RomANa III Workshop, Bonn, 27. Juli 2017</small>
-<br/>
-<small>Folien: http://christofs.github.io/intertext</small>
-<br/>
+<p>Romanistentag<br/>Zürich, October 9, 2017</p>
 <hr/>
-<img height="50" data-src="img/basics/UWUE.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/CLiGS.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="50" data-src="img/basics/BMBF.jpg"></img>
+<p><img height="80" data-src="img/basics/UWUE.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/CLiGS.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/BMBF.jpg"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img height="80" data-src="img/basics/uni-trier.jpg"></img></p>
+</script>
+</section>
 
----
-## Überblick
-<br/>
-1. [Was sind die Digital Humanities?](#/2)
-2. [Digitale Philologie](#/3)
-3. [Intertextualität und DH](#/4)
-4. [(Anschließend: Praxis-Teil: TXM)](#/5)
-
----
-# Was sind die Digital Humanities?
-
-
---
-## 817 Definitionen
-<br/>
-<br/>
-#<a href="http://whatisdigitalhumanities.com/">whatisdigitalhumanities.com</a>
-
---
-## Definition bei Wikipedia
-<p><img height="500" data-src="img/wikipedia_digital-humanities-DE.png"></img></p>
-
---
-## Sphärenmodell (Patrick Sahle)
-<p><img height="500" data-src="img/sahle-sphären.png"></img></p>
-
---
-## Digital Humanities: Eine Einführung (2017)
-<p><img height="500" data-src="img/dh-einfuehrung.jpg"></img></p>
-
----
-# Digitale Philologie
-
---
-## Erzeugen/Anreichern von Text
-<br/>
-* Digitalisierung (Scannen, OCR) <!-- .element: class="fragment" data-fragment-index="1" -->
-* Digitale Texteditionen und Textsammlungen <!-- .element: class="fragment" data-fragment-index="2" -->
-* Linguistisch annotierte Korpora <!-- .element: class="fragment" data-fragment-index="3" -->
-* Editionsphilologie: Stemmata, Kollationierung <!-- .element: class="fragment" data-fragment-index="4" -->
-* Wichtigste Grundlage: Text Encoding Initiative <br/>(TEI, tei-c.org) <!-- .element: class="fragment" data-fragment-index="5" -->
-
---
-## Analysieren/Interpretieren von Text
-<br/>
-* Quantitative vs. qualitative Verfahren <!-- .element: class="fragment" data-fragment-index="1" -->
-* Explorative Verfahren vs. Hypothesentests <!-- .element: class="fragment" data-fragment-index="2" -->
-* Natural Language Processing, Maschinelles Lernen, Neuronale Netze <!-- .element: class="fragment" data-fragment-index="3" -->
-* Textvergleich: Unterschiede oder Gemeinsamkeiten <!-- .element: class="fragment" data-fragment-index="4" -->
-
-
----
-# Intertextualität und DH: Panorama
-
---
-## Kollationierung
-<br/>
-* Detaillierter Vergleich mehrerer Fassungen eines Textes
-* Fokus auf den feinen Unterschieden
-* Insbesondere relevant im Kontext der Editionswissenschaften
-
---
-## Variant Graph für The Martian
-<img height="500" data-src="img/collation1_martian_ch2.png"></img>
-
---
-## The Martian: Ausmaß der Änderungen
-<img height="500" data-src="img/progression.png"></img>
-(Verlauf über den Text hinweg; Levenshtein-Distanz)
-
---
-## Stilometrie
-<br/>
-* Stilistische / lexikalische Ähnlichkeit von Texten
-* Diverse Maße für Textähnlichkeit
-* Autorschaftsattribution (und mehr)
-* Merkmale: Wörter, Topics, etc.
-
---
-## Stilometrie: Autorschaftsattribution 
-<img height="500" data-src="img/stylometry2.png"></img>
-<p>(Molière-Corneille Kontroverse)</p>
-
---
-## Topic-basierte Ähnlichkeit von Autoren
-<img height="500" data-src="img/6_clustering.png"></img>
-<p>(Topic Modeling mit französischen Krimis)</p>
-
---
-## Kontrastive Analyse
-<br/>
-* Zwei Textgruppen: Identifikation distinktiver Merkmale
-* Zahlreiche Maße der Distinktivität / "keyness"
-* log-likelihood, t-Test, Zeta, etc.
-
---
-## Distinktives Vokabular 
-<img height="500" data-src="img/zetascores_comedie-tragedie_30-lemmata_with-CI.png"></img>
-<p>(Vergleich von Komödien und Tragödien)</p>
-
---
-## Historical Text-Reuse
-<br/>
-* Aufdecken von Zitaten, Anspielungen, Plagiaten
-* Prinzip: flexibles "sequence alignment"<br/>(n-Gramm-Schindeln)
-* Gruppen: eTrap (Göttingen), ARFL (Chicago)
-
---
-## Quellen der Encyclopédie
-<img height="500" data-src="img/encylopedie.png"></img>
-<p>(Encyclopédie und Voltaire im Vergleich; Glenn Roe)</p>
-
---
-## Zitate im Thesaurus Linguae Graecae
-<img height="500" data-src="img/text-reuse-heatmap_marco-buechler.png"></img>
-<p>(Heatmap der Autorenwerke; Marco Büchler)</p>
-
---
-## Textmuster-Vergleich mit TXM
-
---
-## Beispiel Spitzer/Racine
-<img height="500" data-src="img/G4-in-TXM_racine.png"></img>
-<p>(Muster: 'abstraktes Nomen + où' bei Racine)</p>
-
---
-## Vergleich Racine/Zeitgenossen
-<a href="img/comparison-statistics_MeanRatio12.svg"><img height="500" data-src="img/comparison-statistics_MeanRatio12.svg"></img></a>
-<p>(Über- und unterrepräsentierte Muster)</p>
-
-
----
-# Praxis-Teil: TXM
-
---
-## Allgemeines
-<br/>
-* Einführung in TXM: http://textometrie.ens-lyon.fr/
-* TXM: Tool für das systematische Durchsuchen von Textsammlungen nach Mustern
-* Beispielsammlung: französische Romane des 19. Jahrhunderts
-
---
-## Beispiel-Frage
-<br/>
-* Ist Maupassant stärker von Flaubert beeinflusst als von Zola und/oder
-Balzac?
-* Welche sprachlichen und stilistischen Merkmale hat
-Maupassant von Flaubert übernommen?
-
---
-## Praktisches zum Mitmachen (1)
-<br/>
-* Textsammlung importieren
-* Vorhandene Textsammlung laden
-* Einfache Suchabfragen: Wortformen
-* Weiter in die KWIC-Ansicht
-
---
-## Praktisches zum Mitmachen (2)
-<br/>
-* Erweiterte Abfragen durch Reguläre Ausdrücke
-* Erweiterte Abfragen durch Nutzung der Annotation
-* Im Ergebnis: Komplexe Muster als Suchabfragen
-
---
-## Praktisches zum Mitmachen (3)
-<br/>
-* Textsammlung nach Metadaten partitionieren
-* Vergleichende Abfragen
-* Kollokationen und Vergleich von Kollokationen
-
-
----
-<br/>
-<br/>
-<br/>
-## Danke!
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<hr/>
-<p><a href="https://christofs.github.io/">christofs.github.io/intertext</a></p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a><br/></p>
-<hr/>
-<br/>
-<br/>
+<section data-markdown>
+<script type="text/template">
+## Overview
+* [Introduction: Spitzer and Racine](#/2)
+* [Ouverture: Why a replication study?](#/3)
+* [Replication: The "dampening effect" in Racine](#/4)
+* [Expansion: Racine and his contemporaries](#/5)
+* [Inversion: Extracting distinctive features](#/6)
+* [Conclusion](#/7)
 </script>
 </section>
 
 
+
+
+
+<section>
+
+
+<section data-markdown>
+<script type="text/template">
+# Introduction: <br/>Spitzer and Racine
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Context
+<br/>
+* Jean Racine, French dramatic author<br/>(\* 1639 in La Ferté-Milon, † 1699 in Paris) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Leo Spitzer, Austrian Romance philologist <br/>(\* 1887 in Vienna, † 1960 in Viareggio) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Key publication: <br/>"Die klassische Dämpfung in Racines Stil" (1928) <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## The "classical dampening effect"
+<br/>
+* A principle of literary style <!-- .element: class="fragment" data-fragment-index="1" -->
+* Musical metaphor: the dampening pedal <!-- .element: class="fragment" data-fragment-index="2" -->
+* Circumscribed as "das Nüchtern-Gedämpfte, Verstandesmäßig-Kühle, fast Formelhafte" <!-- .element: class="fragment" data-fragment-index="3" -->
+* Period style (Classicism) vs. authorial style (Racine) <!-- .element: class="fragment" data-fragment-index="4" -->
+* Very influential concept, marked our understanding of Racine and the Classical Age <!-- .element: class="fragment" data-fragment-index="5" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Spitzers Approach
+<br/>
+* "Dampening" as the principle giving unity to Racine's style (and work) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Differentiated into 10 abstract phenomena (depersonalisation, effacement of borders, abstraction, etc.) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Realised by around 50 different stylistic patterns <!-- .element: class="fragment" data-fragment-index="3" -->
+* Illustrated with 484 examples from Racine's 11 tragedies <!-- .element: class="fragment" data-fragment-index="4" -->
+</script>
+</section>
+
+</section>
+<section>
+
+<section data-markdown>
+<script type="text/template">
+# Ouverture: Why a replication study?
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Theoretical framework
+<p><img height="500" data-src="img/wiederholende-forschung.png"></img>
+<p>(<a href="https://christofs.github.io/wiederholende-forschung-dhd/#/">"Wiederholende Forschung"</a>, DHd-Tagung 2017)</p>
+</script>
+</section>
+
+
+
+<section data-markdown>
+<script type="text/template">
+## Aims of a repeating study
+<br/>
+* Perform a 're-enactment' of a previous study <!-- .element: class="fragment" data-fragment-index="1" -->
+* Recognize the presuppositions, strengths and weaknesses of both studies <!-- .element: class="fragment" data-fragment-index="2" -->
+* Here: think again about Spitzer, Racine, Style, Classical Age <!-- .element: class="fragment" data-fragment-index="3" -->
+* And: think about relation between established and digital stylistics <!-- .element: class="fragment" data-fragment-index="4" -->
+</script>
+</section>
+
+
+
+
+
+
+</section>
+
+
+
+
+</section>
+<section>
+
+<section data-markdown>
+<script type="text/template">
+# Replication: <br/>The dampening effect in Racine
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Spitzer 1928
+<p><img height="350" data-src="img/spitzer-de-p136a.png"></img>
+<p>Spitzer, "Die klassische Dämpfung...", S. 136</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Text collection
+<br/>
+* 11 tragedies by Racine (1664-1691): *Alexandre, Andromaque, Athalie, Bajazet, Bérénice, Britannicus, Esther, Iphigénie, Mithridate, Phèdre, Thébaïde* <!-- .element: class="fragment" data-fragment-index="1" -->
+* XML-Format with morphological and semantic annotation <!-- .element: class="fragment" data-fragment-index="2" -->
+* Workflow: TEI + Freeling + NLTK + WordNet + Python <!-- .element: class="fragment" data-fragment-index="3" -->
+<p align="center"><a href="img/freeling-xml-example.png"><img height="200" data-src="img/freeling-xml-example.png"></a></img></p> <!-- .element: class="fragment" data-fragment-index="4" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Challenge: Modeling
+<br/>
+* complex stylistic patterns <!-- .element: class="fragment" data-fragment-index="1" -->
+    * brief description <!-- .element: class="fragment" data-fragment-index="1" -->
+    * selected examples <!-- .element: class="fragment" data-fragment-index="1" -->
+* Operationalisation <!-- .element: class="fragment" data-fragment-index="2" -->
+    * CQP-Query (Corpus Query Processor): <br/>RegEx + Annotations <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Quantification in TXM (corpus analysis tool, ENS Lyon) <!-- .element: class="fragment" data-fragment-index="2" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Quality of the model
+<br/>
+* Test 1: All of Spitzer's examples <br/>are included in the results (=recall) <!-- .element: class="fragment" data-fragment-index="1" -->
+* Test 2: All results correspond to <br/>Spitzer's definition (=precision) <!-- .element: class="fragment" data-fragment-index="2" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Beispiel: Das entgrenzende 'où'
+<br/>
+><br/>Zur Konturverwischung trägt auch bei das entgrenzende 'où' ("wo"), das besonders gern bei Abstrakten eintritt, bei denen man sich schwer eine Örtlichkeit, einen umzirkten Raum denken kann, in den das Wo eindringen könnte;
+><br/>
+><br/>Spitzer, "Die klassische Dämpfung...", S. 168.
+><br/>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## "où": Beispiele bei Spitzer
+<br/>
+><br/>"...cette mort où je cours,"
+><br/>"...la honte où je suis descendue."
+><br/>"...les déplaisirs où son âme se noie."
+><br/>
+><br/>(... this death, where I aspire,)
+><br/>(...this humiliation, where I have sunken to.)
+><br/>(...this pain, where his soul is drowning.)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Query for Abstract nouns + "où"
+<br/>
+* [wnlex="noun.feeling"|lemma="trouble|honte|pudeur<br/>| ... |oeil|mort|hymen"][word=","]{0,1}[word="où"%c] <!-- .element: class="fragment" data-fragment-index="1" -->
+* Result <!-- .element: class="fragment" data-fragment-index="2" -->
+    * 21 different patterns <!-- .element: class="fragment" data-fragment-index="2" -->
+    * 31 hits in 10 plays <!-- .element: class="fragment" data-fragment-index="2" -->
+* Test 1 is perfect, test 2 almost perfect <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<p><a href="img/G4-in-TXM_racine.png"><img height="550" data-src="img/G4-in-TXM_racine.png"></img></a>
+<p>Results for abstract nouns + "où" (in TXM)</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Other stylistic patterns
+<br/>
+* spatial paraphrase (= weakened emotional expression): "sur ces rivages" / "on these shores" <!-- .element: class="fragment" data-fragment-index="1" -->
+* paraphrase with 'to see' (effacement of contours): <br/>"il m'a vu + VERB" / "he saw me + VERB" <!-- .element: class="fragment" data-fragment-index="2" -->
+* ... <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Conclusions so far
+<br/>
+* modeling challenge (30 of 50 patterns modeled)
+* quantities only make sense through comparison
+</script>
+</section>
+
+
+
+
+
+
+
+</section>
+<section>
+
+
+
+<section data-markdown>
+<script type="text/template">
+# Expansion: <br/>Racine and his contemporaries
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Question
+<p><img height="200" data-src="img/spitzer-de-p136b.png"></img>
+<p>Spitzer, "Die klassische Dämpfung...", 1928, S. 136</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Text collection
+<br/>
+* 11 tragedies by Racine + 38 other tragedies (1660-1695)
+* Authors: Claude Boyer, Jean Campistron, Pierre Corneille, Thomas Corneille, Philippe Quinault, Nicolas Pradon
+* Source: http://www.theatre-classique.fr <br/>(Paul Fièvre / Paris-IV)
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Example: abstract noun + "où"
+<br/>
+* 166 further examples in several authors (notably, Pierre and Thomas Corneille) <!-- .element: class="fragment" data-fragment-index="1" -->
+* usually the same, some new abstract nouns ("ressentiments où", "souhaits où") <!-- .element: class="fragment" data-fragment-index="2" -->
+* several 'false positives': "M'offre un sujet de joie où j'en voyais d'ennui" / "Is an occasion for joy where I saw one for pain" <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Visual comparison of frequencies
+<p><a href="img/G4n-boxplot.svg"><img height="500" data-src="img/G4n-boxplot.svg"></img></a>
+<p>Distribution: abstract nouns + "où"</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Summary statistics
+<br/>
+* mean frequency per 1000 tokens <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Racine: 0.167 <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Contemporaries: 0.232 <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Ratio: 0.719 <br/>(= underrepresented in Racine!) <!-- .element: class="fragment" data-fragment-index="2" -->
+* Wilcoxon Test (p-value): 0.450 <br/>(= clearly not significant) <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## 30 phenomena at a glance
+<p><a href="img/comparison-statistics_MeanRatio12.svg"><img height="500" data-src="img/comparison-statistics_MeanRatio12.svg"></img></a>
+<p>pale green = not significant; green = significant according to Wilcoxon-Test</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Conclusions so far
+<br/>
+* Operationalisation allows for easy scaling to more texts <!-- .element: class="fragment" data-fragment-index="1" -->
+* Challenge: 'controlled generalisation': avoid a 'Racine bias' <!-- .element: class="fragment" data-fragment-index="2" -->
+* "Dampening": partly typical of classicism, partly of Racine <!-- .element: class="fragment" data-fragment-index="3" -->
+* So, what is distinctive of Racine?<!-- .element: class="fragment" data-fragment-index="4" -->
+</script>
+</section>
+
+
+
+
+
+
+</section>
+<section>
+
+
+
+<section data-markdown>
+<script type="text/template">
+# Inversion: <br/>distinctive features
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Craig's Zeta: Racine vs. Contemporaries
+<p align="center"><img height="500" data-src="img/form-uni_Craig_001.png"></img></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;== avoided &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; preferred     ==&gt;</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Extraction of distinctive features
+<br/>
+* on different levels <!-- .element: class="fragment" data-fragment-index="1" -->
+    * word forms or lemmata <!-- .element: class="fragment" data-fragment-index="1" -->
+    * part-of-speech tags <!-- .element: class="fragment" data-fragment-index="1" -->
+    * WordNet 'lexnames' <!-- .element: class="fragment" data-fragment-index="1" -->
+* with different length of bi-grams <!-- .element: class="fragment" data-fragment-index="2" -->
+    * unigrams <!-- .element: class="fragment" data-fragment-index="2" -->
+    * bigrams <!-- .element: class="fragment" data-fragment-index="2" -->
+    * trigrams <!-- .element: class="fragment" data-fragment-index="2" -->
+* On the basis of annotated texts in two groups <!-- .element: class="fragment" data-fragment-index="3" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Example: distinctive POS-bigrams
+<p><img height="500" data-src="img/pos-bi_Craig_001.png"></img></p>
+<p>Examples for *interj-noun*: "Ô Ciel", "Ah Seigneur", etc.</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+##Distributions of "interj-noun"
+<p><img height="500" data-src="img/interj-noun-boxplot.svg"></img>
+<p>ratio of means: 1.679; Wilcoxon p-value: 0.01</p>
+</script>
+</section>
+
+
+
+
+
+</section>
+<section>
+
+
+
+<section data-markdown>
+<script type="text/template">
+# Conclusion
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Results
+<br/>
+* Racine and the Classical Age <!-- .element: class="fragment" data-fragment-index="1" -->
+    * modeled features partly for classical tragedy, partly for Racine <!-- .element: class="fragment" data-fragment-index="1" -->
+* Notion of style <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Spitzer: style as unifying principle / deviation of an (implicit) norm <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Quantitative stylistics: Style as a distinctive feature / comparison with an explicit norm <!-- .element: class="fragment" data-fragment-index="2" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Modeling
+<br/>
+* Modeling problem <!-- .element: class="fragment" data-fragment-index="1" -->
+    * currently, 30 of 50 phenomena have been modeled<!-- .element: class="fragment" data-fragment-index="2" -->
+    * further annotations are required (expand WordNet coverage, sentiment annotation; syntax; metrical analysis) <!-- .element: class="fragment" data-fragment-index="3" -->
+    * Digital methods on the test bench: limitations and possibilities <!-- .element: class="fragment" data-fragment-index="4" -->
+* Modeling of "dampening" <!-- .element: class="fragment" data-fragment-index="5" -->
+    * Current approach: focus on the stylistic patterns <!-- .element: class="fragment" data-fragment-index="6" -->
+    * Relation between modeled features / dampening is not evaluated <!-- .element: class="fragment" data-fragment-index="7" -->
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Replication
+<br/>
+* Spitzer's approach <!-- .element: class="fragment" data-fragment-index="1" -->
+    * Suggestive, flexible argumentation, but overall rather precise patterns <!-- .element: class="fragment" data-fragment-index="2" -->
+    * Difficult to repeat: exact data used is unknown, no verifiable hypothesis <!-- .element: class="fragment" data-fragment-index="3" -->
+* Quantitative Stilistics <!-- .element: class="fragment" data-fragment-index="4" -->
+    * "re-enactment" of Spitzer, rather than strict replication <!-- .element: class="fragment" data-fragment-index="5" -->
+    * Qualitative results are 'stand-alone', quantitative results require a comparison <!-- .element: class="fragment" data-fragment-index="6" -->
+    * Digital research: easier to replicate: <!-- .element: class="fragment" data-fragment-index="7" --><a href="https://github.com/cligs/projects/tree/master/2016/racine">data, definitions and code available on-line</a> <!-- .element: class="fragment" data-fragment-index="7" -->
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<br/>
+><br/>
+><br/>Should we strive to obtain the same results or approach the process of replication as a way of knowing?
+><br/>
+
+<br/>(Geoffrey Rockwell 2016)
+<br/>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<br/>
+## Vielen Dank!
+<br/>
+<br/>
+<br/>
+<br/>Siehe:
+<br/><a href="http://github.com/cligs/projects">github.com/cligs/projects</a>
+<br/><a href="https://zenodo.org/record/56856"><img height="30" data-src="img/projects-zenodo-doi.png"></img></a>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<hr/>
+<small>
+<p><a href="http://www-christof-schoech-de">Autor: Christof Schöch</a>
+<p><a href="https://creativecommons-org/licenses/by/4-0/">Lizenz: Creative Commons Attribution 4-0 International</a></p>
+</small>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## Bibliography
+<small>
+* Moretti, Franco. „Network Theory, Plot Analysis“ (Literary Lab Pamphlets, 2). Stanford: Literary Lab, 2011.
+* Rockwell, Geoffrey. „Replication as a way of knowing in the digital humanities“. Vortrag, Universität Würzburg, 27. April 2016.
+* Schöch, Christof. „Wiederholende Forschung in den digitalen Geisteswissenschaften. Zwei literaturwissenschaftliche Fallstudien“. DHd-Tagung 2017: Digitale Nachhaltigkeit</em>, Universität Bern, Schweiz, 8.-13.2.2017.
+* Spitzer, Leo. „Die klassische Dämpfung in Racines Stil“ [1928]. In: *Romanische Stil- und Literaturstudien I*, Marburg: Elwert, 1931, 135-268.
+* Spitzer, Leo. „L’effet de sourdine dans le style classique : Racine“. In *Études de style*, Paris: Gallimard, 1988, 208-335.
+
+</small>
+</script>
+</section>
+
+
+</section>
+<section>
+
+<section data-markdown>
+<script type="text/template">
+# Bonus-Folien
+</small>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<p align="center"><a href="img/stylo_CA_1200_MFWs_Culled_25__Eder's Delta__001.png"><img height="550" data-src="img/stylo_CA_1200_MFWs_Culled_25__Eder's Delta__001.png"></img></a></p>
+<p>Textsammlung: Racine und Zeitgenossen</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<p><a href="img/comparison-statistics_MeanRatio12_Corneilles-Autres.svg"><img height="550" data-src="img/comparison-statistics_MeanRatio12_Corneilles-Autres.svg"></img></a>
+<p>Stilistische Muster Corneilles vs. Andere</p>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+<p><a href="img/freeling-xml-example.png"><img height="550" data-src="img/freeling-xml-example.png"></img></a>
+<p>Beispiel für Freeling/WordNet-annotiertes XML</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+<p><a href="img/spitzer-beispiele.svg"><img height="550" data-src="img/spitzer-beispiele.svg"></img></a>
+<p>Bias: 91% Beispiele aus 4/11 Stücken</p>
+</script>
+</section>
+
+
+<section data-markdown>
+<script type="text/template">
+## 30 stilistische Muster (1/2)
+<small>
+* A1    der indirekte Artikel
+* A2    des + pluralisches Substantiv + Relativsatz
+* A3    unpersönliche Ausdrücke mit on
+* B1    distanzierender Gebrauch des Demonstrativs
+* B2A   lokative Periphrasen
+* B2B   temporale Periphrase
+* C1    das beteuernde si
+* C2    tant + Substantiv
+* G1    konturvespitzer dämpfung racinerwischende Plurale
+* G2    konturverwischende Begriffe
+* G3    das neutrale ce que
+* G4n   das Relativpronomen où nach Abstrakta
+* G5    phraseologische Verben
+* G6    Periphrasen mit voir
+* G7    umschreibender Ausdruck des Verbs
+
+</small>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## 30 stilistische Muster (2/2)
+<small>
+* H10A  Zweigliedrigkeit: Substantive mit et
+* H10B  Zweigliedrigkeit: Verben
+* H10C  Zweigliedrigkeit: Substantive mit ni
+* H10D  Zweigliedrigkeit: Substantive mit ou
+* H12   Adjektiv-Oppositionen
+* H1    wertenden Adjektiva und Adverbien
+* H3    trop + Adjektiv
+* L1    feierliche Wiederholung
+* L2A   das steigernde Asyndeton: Verben
+* L2B   das steigernde Asyndeton: Substantive
+* L3    Ballung durch ein zusammenfassendes tout
+* L4    Aneinanderreihung von Nominalkonstruktionen
+* M4A   Interjektionen
+* M4B   Ausrufe
+* M7    Rundzahlen
+
+</small>
+</script>
+</section>
+
+<section data-markdown>
+<script type="text/template">
+## Reproducibility Spectrum
+<p><img height="350" data-src="img/reproducibility-spectrum_Peng-2011.png"></img>
+<p>(Peng 2011)</p>
+</script>
+</section>
+
+
+</section>
 
 <!-- DON'T TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING :-) -->
 </div>
